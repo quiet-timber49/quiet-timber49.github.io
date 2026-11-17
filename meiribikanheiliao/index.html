@@ -1,0 +1,1063 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>每日必看黑料-圈内争议档案与时间线</title>
+<meta name="description" content="每日必看黑料是圈内争议事件的档案式整理，按时间线收录直播事故、代言翻车、平台处罚与当事人回应的原始说法，附判断拆解与核对清单，帮你在吃瓜前看清哪部分是事实、哪部分是转述。">
+<meta name="keywords" content="每日必看黑料">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23171218'/%3E%3Cpath d='M14 44 L26 20 L34 34 L42 16 L52 44' stroke='%23e8b84b' stroke-width='5' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<style>
+:root{
+  --ink:#171218;
+  --ink-2:#2b2230;
+  --paper:#f6f2ec;
+  --paper-2:#efe8df;
+  --line:#d9cfc3;
+  --muted:#6d6270;
+  --gold:#b8862a;
+  --gold-soft:#e8b84b;
+  --rust:#9c3f2c;
+  --teal:#20615c;
+  --radius:10px;
+  --radius-lg:16px;
+  --shadow:0 2px 10px rgba(23,18,24,.08);
+  --shadow-up:0 8px 26px rgba(23,18,24,.14);
+  --sp-1:8px;--sp-2:14px;--sp-3:22px;--sp-4:34px;--sp-5:52px;
+  --fs-xs:12px;--fs-sm:13.5px;--fs-base:15.5px;--fs-lg:18px;--fs-xl:22px;--fs-2xl:30px;--fs-3xl:42px;
+  --font:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+  --announce-h:38px;--header-h:60px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;font-family:var(--font);background:var(--paper);color:var(--ink);
+  font-size:var(--fs-base);line-height:1.78;-webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+h1,h2,h3,h4{margin:0;line-height:1.3;font-weight:700;letter-spacing:.01em}
+p{margin:0 0 var(--sp-2)}
+ul,ol{margin:0 0 var(--sp-2);padding-left:1.2em}
+li{margin-bottom:6px}
+button{font-family:inherit}
+:target{scroll-margin-top:calc(var(--announce-h) + var(--header-h) + 14px)}
+.wrap{width:100%;max-width:1180px;margin:0 auto;padding:0 18px}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* ===== 吸顶公告条 + 页头 ===== */
+.sticky-top{position:sticky;top:0;z-index:60}
+.announce{
+  height:var(--announce-h);background:var(--ink);color:#f0e9df;
+  display:flex;align-items:center;font-size:var(--fs-xs);
+}
+.announce .wrap{display:flex;align-items:center;gap:10px;overflow:hidden}
+.announce .dot{width:7px;height:7px;border-radius:50%;background:var(--gold-soft);flex:none}
+.announce .brandmark{color:var(--gold-soft);font-weight:700;flex:none}
+.announce p{margin:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.announce time{color:#c9bda9;flex:none}
+.site-header{
+  height:var(--header-h);background:rgba(246,242,236,.96);backdrop-filter:blur(6px);
+  border-bottom:1px solid var(--line);display:flex;align-items:center;
+}
+.site-header .wrap{display:flex;align-items:center;gap:var(--sp-2)}
+.logo{display:flex;align-items:center;gap:9px;flex:none}
+.logo svg{width:30px;height:30px;flex:none}
+.logo b{font-size:16px;letter-spacing:.02em}
+.logo b em{font-style:normal;color:var(--gold)}
+.main-nav{display:flex;gap:2px;flex:1;min-width:0;overflow-x:auto;scrollbar-width:none}
+.main-nav::-webkit-scrollbar{display:none}
+.main-nav a{
+  font-size:var(--fs-sm);color:var(--ink-2);padding:7px 10px;border-radius:8px;white-space:nowrap;
+}
+.main-nav a:hover,.main-nav a:focus-visible{background:var(--paper-2);outline:none}
+.main-nav a:focus-visible{box-shadow:0 0 0 2px var(--gold)}
+.header-tools{display:flex;align-items:center;gap:8px;flex:none}
+.search{display:flex;align-items:center;background:#fff;border:1px solid var(--line);border-radius:999px;padding:3px 4px 3px 12px}
+.search input{border:0;outline:none;font-size:var(--fs-sm);width:138px;background:transparent;color:var(--ink);padding:5px 0}
+.search button{
+  border:0;background:var(--ink);color:#fff;border-radius:999px;font-size:var(--fs-xs);
+  padding:6px 12px;cursor:pointer;
+}
+.search button:hover{background:var(--gold)}
+.search-tip{font-size:var(--fs-xs);color:var(--rust);flex-basis:100%;margin:0;display:none}
+.search-tip.on{display:block}
+.menu-btn{
+  display:none;border:1px solid var(--line);background:#fff;border-radius:8px;
+  width:38px;height:36px;align-items:center;justify-content:center;cursor:pointer;
+}
+.menu-btn span{display:block;width:16px;height:2px;background:var(--ink);margin:2px 0;transition:.2s}
+.menu-btn:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+
+/* ===== 首屏 ===== */
+.hero{
+  background:var(--ink-2);color:#efe6d8;position:relative;overflow:hidden;
+  border-bottom:3px solid var(--gold);
+}
+.hero::before{
+  content:"";position:absolute;inset:0;
+  background:
+    radial-gradient(700px 300px at 82% -10%, rgba(232,184,75,.22), transparent 65%),
+    radial-gradient(500px 260px at 10% 120%, rgba(32,97,92,.35), transparent 70%);
+  pointer-events:none;
+}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1.35fr .95fr;gap:var(--sp-4);padding-top:var(--sp-5);padding-bottom:var(--sp-5)}
+.hero-tag{
+  display:inline-flex;align-items:center;gap:8px;font-size:var(--fs-xs);letter-spacing:.14em;
+  color:var(--gold-soft);border:1px solid rgba(232,184,75,.45);border-radius:999px;padding:4px 12px;margin-bottom:var(--sp-2);
+}
+.hero h1{font-size:var(--fs-3xl);letter-spacing:.03em;margin-bottom:var(--sp-2);color:#fbf5ea}
+.hero h1 span{color:var(--gold-soft)}
+.hero-lead{color:#d5c9bb;font-size:var(--fs-lg);line-height:1.75;max-width:37em}
+.hero-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:var(--sp-3)}
+.btn{
+  display:inline-block;padding:10px 20px;border-radius:999px;font-size:var(--fs-sm);font-weight:600;
+  border:1px solid transparent;transition:transform .15s ease,background .15s ease;
+}
+.btn:hover{transform:translateY(-2px)}
+.btn-gold{background:var(--gold-soft);color:#241a08}
+.btn-gold:hover{background:#f2c85f}
+.btn-ghost{border-color:rgba(239,230,216,.4);color:#efe6d8}
+.btn-ghost:hover{border-color:var(--gold-soft);color:var(--gold-soft)}
+.hero-stats{display:flex;flex-wrap:wrap;gap:var(--sp-3);margin-top:var(--sp-4);border-top:1px solid rgba(239,230,216,.18);padding-top:var(--sp-2)}
+.hero-stats div{min-width:86px}
+.hero-stats b{display:block;font-size:var(--fs-xl);color:var(--gold-soft);font-variant-numeric:tabular-nums}
+.hero-stats span{font-size:var(--fs-xs);color:#b8ab9c}
+.hero-visual{position:relative;align-self:center}
+.hero-visual svg{width:100%;height:auto}
+.hero-note{
+  position:absolute;right:4%;bottom:2%;font-size:var(--fs-xs);color:#b8ab9c;
+  background:rgba(23,18,24,.7);border:1px solid rgba(239,230,216,.15);border-radius:8px;padding:5px 9px;
+}
+
+/* ===== 布局 ===== */
+.layout{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:var(--sp-4);align-items:start;padding:var(--sp-4) 0 var(--sp-5)}
+main{min-width:0}
+aside{position:sticky;top:calc(var(--announce-h) + var(--header-h) + 14px);display:flex;flex-direction:column;gap:var(--sp-2)}
+section[id]{padding-top:6px;margin-bottom:var(--sp-5)}
+.sec-head{display:flex;align-items:baseline;justify-content:space-between;gap:12px;border-bottom:2px solid var(--ink);padding-bottom:8px;margin-bottom:var(--sp-3)}
+.sec-head h2{font-size:var(--fs-xl)}
+.sec-head .kicker{font-size:var(--fs-xs);color:var(--muted);letter-spacing:.06em;flex:none}
+.sec-sub{color:var(--muted);font-size:var(--fs-sm);margin:-14px 0 var(--sp-3)}
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}
+.tag{display:inline-block;font-size:var(--fs-xs);padding:2px 9px;border-radius:999px;background:var(--paper-2);color:var(--ink-2);border:1px solid var(--line)}
+.tag-fact{background:#e7f0ec;color:var(--teal);border-color:#bfd8d2}
+.tag-claim{background:#fbeee4;color:var(--rust);border-color:#eccdb9}
+.tag-hear{background:#f2eef6;color:#5b3f74;border-color:#d9cbe6}
+.tag-guess{background:#eef1f6;color:#3c4a63;border-color:#cbd4e2}
+.tag-hot{background:var(--gold-soft);color:#241a08;border-color:#d6a63a}
+.meta{font-size:var(--fs-xs);color:var(--muted);display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+a.link{color:var(--teal);border-bottom:1px solid rgba(32,97,92,.35)}
+a.link:hover{color:var(--gold);border-color:var(--gold)}
+
+/* 概览 */
+.overview-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--sp-2)}
+.ov-card{padding:var(--sp-2) var(--sp-3);background:#fff;border:1px solid var(--line);border-radius:var(--radius)}
+.ov-card h3{font-size:var(--fs-base);margin-bottom:6px}
+.ov-card p{font-size:var(--fs-sm);color:var(--ink-2);margin:0}
+.ov-card .num{font-size:var(--fs-xs);color:var(--gold);letter-spacing:.1em;display:block;margin-bottom:4px}
+
+/* 精选推荐 非对称 */
+.pick{display:grid;grid-template-columns:1.15fr 1fr;gap:var(--sp-2)}
+.pick-main{padding:var(--sp-3);background:linear-gradient(160deg,#fff 60%,#f5eee3);border:1px solid var(--line);border-radius:var(--radius-lg);box-shadow:var(--shadow)}
+.pick-main h3{font-size:var(--fs-lg);margin-bottom:8px}
+.pick-main p{font-size:var(--fs-sm);color:var(--ink-2)}
+.pick-main img{border-radius:8px;margin-top:10px;aspect-ratio:16/8;width:100%;object-fit:cover}
+.pick-side{display:flex;flex-direction:column;gap:var(--sp-2)}
+.pick-item{display:grid;grid-template-columns:64px 1fr;gap:10px;padding:10px;background:#fff;border:1px solid var(--line);border-radius:var(--radius);align-items:center}
+.pick-item img{width:64px;height:64px;border-radius:8px;object-fit:cover}
+.pick-item h4{font-size:var(--fs-sm);margin-bottom:2px}
+.pick-item .meta{gap:6px}
+
+/* 最新更新 紧凑列表 */
+.updates{list-style:none;padding:0;margin:0;border-top:1px solid var(--line)}
+.updates li{display:grid;grid-template-columns:74px 1fr auto;gap:12px;padding:11px 2px;border-bottom:1px solid var(--line);margin:0}
+.updates time{font-size:var(--fs-xs);color:var(--muted);font-variant-numeric:tabular-nums;padding-top:3px}
+.updates .t{font-size:var(--fs-sm)}
+.updates .t b{font-weight:600}
+.updates .t span{display:block;color:var(--muted);font-size:var(--fs-xs);margin-top:1px}
+
+/* 分类入口 标签索引 */
+.cat-index{display:flex;flex-wrap:wrap;gap:8px}
+.cat-index a{
+  font-size:var(--fs-sm);background:#fff;border:1px solid var(--line);border-radius:999px;
+  padding:7px 14px;display:inline-flex;align-items:center;gap:8px;transition:.15s;
+}
+.cat-index a b{color:var(--gold);font-size:var(--fs-xs);font-weight:600}
+.cat-index a:hover{border-color:var(--ink);transform:translateY(-2px)}
+
+/* 信息分层看板 */
+.layer-panel{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--sp-2)}
+.layer{padding:var(--sp-2);border:1px solid var(--line);border-radius:var(--radius);background:#fff}
+.layer h4{font-size:var(--fs-sm);margin-bottom:8px;display:flex;align-items:center;gap:6px}
+.layer ul{list-style:none;padding:0;margin:0;font-size:var(--fs-sm)}
+.layer li{padding:5px 0;border-bottom:1px dashed var(--line)}
+.layer li:last-child{border-bottom:0}
+.layer .who{display:block;color:var(--muted);font-size:var(--fs-xs)}
+
+/* 深度解析 */
+.deep{background:#fff;border:1px solid var(--line);border-radius:var(--radius-lg);padding:var(--sp-4);box-shadow:var(--shadow)}
+.deep .lead{font-size:var(--fs-lg);color:var(--ink-2);border-left:3px solid var(--gold);padding-left:var(--sp-2);margin-bottom:var(--sp-3)}
+.deep h2{font-size:var(--fs-xl);margin-bottom:6px}
+.deep h3{font-size:var(--fs-lg);margin:var(--sp-4) 0 var(--sp-1);padding-bottom:5px;border-bottom:1px solid var(--line)}
+.deep-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:var(--sp-3);margin:var(--sp-2) 0}
+.quote-card{
+  background:var(--paper-2);border-left:4px solid var(--rust);border-radius:0 var(--radius) var(--radius) 0;
+  padding:var(--sp-2) var(--sp-3);font-size:var(--fs-sm);color:var(--ink-2);margin:var(--sp-2) 0;
+}
+.quote-card cite{display:block;font-style:normal;font-size:var(--fs-xs);color:var(--muted);margin-top:6px}
+.check-table{width:100%;border-collapse:collapse;font-size:var(--fs-sm);margin:var(--sp-2) 0}
+.check-table th,.check-table td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+.check-table th{background:var(--paper-2);font-weight:600;font-size:var(--fs-xs)}
+.check-table tr td:first-child{color:var(--muted);width:92px}
+.verdict{
+  background:linear-gradient(180deg,#fdf6e8,#fff);border:1px solid #e6cf99;border-radius:var(--radius);
+  padding:var(--sp-2) var(--sp-3);margin:var(--sp-2) 0;font-size:var(--fs-sm)
+}
+.verdict strong{color:var(--rust)}
+
+/* 体验指南 编号步骤 */
+.steps{list-style:none;counter-reset:st;padding:0;margin:0;display:grid;gap:10px}
+.steps li{
+  counter-increment:st;background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+  padding:var(--sp-2) var(--sp-2) var(--sp-2) 54px;position:relative;font-size:var(--fs-sm);
+  margin:0;
+}
+.steps li::before{
+  content:counter(st);position:absolute;left:14px;top:14px;width:26px;height:26px;border-radius:50%;
+  background:var(--ink);color:var(--gold-soft);font-size:var(--fs-xs);font-weight:700;
+  display:flex;align-items:center;justify-content:center;
+}
+.steps li b{display:block;font-size:var(--fs-base);margin-bottom:2px}
+.steps li span{color:var(--muted)}
+
+/* FAQ */
+.faq details{border-bottom:1px solid var(--line);background:#fff}
+.faq details:first-child{border-top:1px solid var(--line);border-radius:var(--radius) var(--radius) 0 0}
+.faq details:last-child{border-radius:0 0 var(--radius) var(--radius)}
+.faq summary{
+  cursor:pointer;list-style:none;padding:14px var(--sp-3) 14px var(--sp-3);font-weight:600;font-size:var(--fs-base);
+  position:relative;padding-right:44px;
+}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:16px;top:12px;font-size:20px;color:var(--gold);transition:.2s}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq summary:focus-visible{outline:2px solid var(--gold);outline-offset:-2px}
+.faq .ans{padding:0 var(--sp-3) 16px;font-size:var(--fs-sm);color:var(--ink-2)}
+.faq .ans p:last-child{margin-bottom:0}
+
+/* 评论 */
+.comments{display:grid;grid-template-columns:repeat(2,1fr);gap:var(--sp-2)}
+.cm{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:var(--sp-2);font-size:var(--fs-sm)}
+.cm header{display:flex;justify-content:space-between;font-size:var(--fs-xs);color:var(--muted);margin-bottom:6px}
+.cm header b{color:var(--ink);font-size:var(--fs-sm);font-weight:600}
+.cm p{margin:0;color:var(--ink-2)}
+.cm .ref{display:inline-block;font-size:var(--fs-xs);color:var(--teal);background:#e7f0ec;border-radius:4px;padding:0 5px;margin-right:3px}
+
+/* 资讯 双栏列表 */
+.news-grid{display:grid;grid-template-columns:1fr 1fr;gap:var(--sp-2)}
+.news{display:grid;grid-template-columns:1fr 96px;gap:10px;background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:12px;align-items:center}
+.news h3{font-size:var(--fs-sm);margin-bottom:4px}
+.news p{font-size:var(--fs-xs);color:var(--muted);margin:0}
+.news img{width:96px;height:72px;border-radius:8px;object-fit:cover}
+
+/* 榜单 */
+.rank{counter-reset:rk;list-style:none;padding:0;margin:0;background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+.rank li{
+  counter-increment:rk;display:grid;grid-template-columns:34px 1fr auto;gap:10px;align-items:center;
+  padding:11px var(--sp-2);border-bottom:1px solid var(--line);margin:0;font-size:var(--fs-sm);
+}
+.rank li:last-child{border-bottom:0}
+.rank li::before{content:counter(rk);font-weight:700;color:var(--muted);font-size:var(--fs-sm);text-align:center}
+.rank li:nth-child(-n+3)::before{color:var(--rust)}
+.rank .score{font-size:var(--fs-xs);color:var(--muted);font-variant-numeric:tabular-nums}
+
+/* 相关推荐 */
+.rec{display:flex;flex-wrap:wrap;gap:8px}
+.rec a{
+  font-size:var(--fs-sm);padding:8px 14px;border-radius:8px;background:#fff;border:1px solid var(--line);
+  transition:.15s;
+}
+.rec a:hover{border-color:var(--gold);color:var(--gold);transform:translateY(-2px)}
+
+/* 侧栏 */
+.side-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:var(--sp-2) var(--sp-3);box-shadow:var(--shadow)}
+.side-card h3{font-size:var(--fs-sm);letter-spacing:.04em;margin-bottom:10px;padding-bottom:7px;border-bottom:1px solid var(--line)}
+.side-nav{list-style:none;padding:0;margin:0;font-size:var(--fs-sm)}
+.side-nav li{margin:0}
+.side-nav a{display:block;padding:6px 8px;border-radius:6px;color:var(--ink-2);border-left:2px solid transparent}
+.side-nav a.active{background:var(--paper-2);border-left-color:var(--gold);color:var(--ink);font-weight:600}
+.side-nav a:hover{background:var(--paper)}
+.timeline{list-style:none;padding:0;margin:0;font-size:var(--fs-xs);border-left:2px solid var(--line);margin-left:5px}
+.timeline li{position:relative;padding:0 0 12px 14px;color:var(--ink-2);font-size:var(--fs-sm)}
+.timeline li::before{content:"";position:absolute;left:-6px;top:7px;width:9px;height:9px;border-radius:50%;background:var(--gold-soft);border:2px solid #fff}
+.timeline time{display:block;color:var(--muted);font-size:var(--fs-xs)}
+.side-hot{list-style:none;padding:0;margin:0;font-size:var(--fs-sm)}
+.side-hot li{display:flex;gap:8px;padding:6px 0;border-bottom:1px dashed var(--line)}
+.side-hot li:last-child{border-bottom:0}
+.side-hot .k{color:var(--gold);font-weight:700;font-size:var(--fs-xs);flex:none;width:18px}
+
+/* 页脚 */
+.site-footer{background:var(--ink);color:#cfc4b7;padding:var(--sp-4) 0 var(--sp-3);font-size:var(--fs-sm)}
+.foot-top{display:grid;grid-template-columns:1.2fr 2fr;gap:var(--sp-4);padding-bottom:var(--sp-3);border-bottom:1px solid rgba(239,230,216,.15)}
+.foot-brand{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+.foot-brand svg{width:28px;height:28px}
+.foot-brand b{font-size:var(--fs-lg);color:#fbf5ea}
+.foot-desc{color:#a99c8d;font-size:var(--fs-sm);margin:0;max-width:30em}
+.foot-cols{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--sp-3)}
+.foot-cols h4{font-size:var(--fs-sm);color:var(--gold-soft);margin-bottom:8px;letter-spacing:.06em}
+.foot-cols ul{list-style:none;padding:0;margin:0;font-size:var(--fs-xs)}
+.foot-cols li{margin-bottom:5px}
+.foot-cols a:hover{color:var(--gold-soft)}
+.foot-bottom{padding-top:var(--sp-2);display:flex;flex-wrap:wrap;gap:8px 20px;justify-content:space-between;color:#8d8072;font-size:var(--fs-xs)}
+.foot-note{color:#8d8072;font-size:var(--fs-xs);margin:var(--sp-2) 0 0;max-width:64em}
+
+/* 回到顶部 */
+#toTop{
+  position:fixed;right:18px;bottom:18px;width:44px;height:44px;border-radius:50%;
+  border:1px solid var(--line);background:#fff;color:var(--ink);cursor:pointer;font-size:12px;
+  display:none;align-items:center;justify-content:center;box-shadow:var(--shadow-up);z-index:50;
+}
+#toTop.on{display:flex}
+#toTop:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+
+/* 平板 */
+@media (max-width:960px){
+  .layout{grid-template-columns:1fr;gap:var(--sp-3)}
+  aside{position:static;order:2}
+  .hero .wrap{grid-template-columns:1fr;gap:var(--sp-3)}
+  .hero-visual{max-width:460px}
+  .overview-grid{grid-template-columns:1fr 1fr}
+  .layer-panel{grid-template-columns:1fr 1fr}
+  .pick{grid-template-columns:1fr}
+  .deep-grid{grid-template-columns:1fr}
+  .foot-top{grid-template-columns:1fr}
+}
+/* 手机 */
+@media (max-width:640px){
+  :root{--fs-3xl:30px;--fs-2xl:24px;--fs-xl:19px;--announce-h:34px;--header-h:56px}
+  .announce p{font-size:11px}
+  .menu-btn{display:flex}
+  .main-nav{
+    position:absolute;left:0;right:0;top:calc(var(--announce-h) + var(--header-h));
+    background:var(--paper);border-bottom:1px solid var(--line);flex-direction:column;
+    padding:8px 14px 14px;display:none;box-shadow:var(--shadow-up);
+  }
+  .main-nav.open{display:flex}
+  .main-nav a{padding:10px 8px;border-radius:6px}
+  .search input{width:88px}
+  .header-tools .search{padding-left:8px}
+  .overview-grid,.comments,.news-grid,.layer-panel{grid-template-columns:1fr}
+  .news{grid-template-columns:1fr}
+  .news img{width:100%;height:130px}
+  .foot-cols{grid-template-columns:1fr 1fr}
+  .updates li{grid-template-columns:1fr;gap:2px}
+  .deep{padding:var(--sp-3) var(--sp-2)}
+  .hero-stats{gap:var(--sp-2)}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{transition:none!important;animation:none!important}
+  .btn:hover,.cat-index a:hover,.rec a:hover{transform:none}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div class="sticky-top">
+  <div class="announce">
+    <div class="wrap">
+      <span class="dot" aria-hidden="true"></span>
+      <span class="brandmark">每日必看黑料</span>
+      <p>11月6日 22:40 更新：「星潮Live」带货切片完整版补齐，新增品牌方内部邮件转述与两处时间戳校正</p>
+      <time datetime="2026-11-06">11-06</time>
+    </div>
+  </div>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="logo" href="/#top" aria-label="每日必看黑料 首页">
+        <svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#171218"/><path d="M14 44 L26 20 L34 34 L42 16 L52 44" stroke="#e8b84b" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <b>每日必看<em>黑料</em></b>
+      </a>
+      <nav class="main-nav" id="mainNav" aria-label="主题导航">
+        <a href="/#overview">事件概览</a>
+        <a href="/#picks">精选档案</a>
+        <a href="/#updates">最新更新</a>
+        <a href="/#cats">分类索引</a>
+        <a href="/#deep">深度解析</a>
+        <a href="/#guide">核对指南</a>
+        <a href="/#faq">常见疑问</a>
+        <a href="/#comments">用户评论</a>
+        <a href="/#news">相关资讯</a>
+        <a href="/#rank">热度榜</a>
+      </nav>
+      <div class="header-tools">
+        <form class="search" id="searchForm" role="search" onsubmit="return false;">
+          <label class="sr-only" for="q">站内查找事件</label>
+          <input id="q" type="search" placeholder="找事件 / 人名 / 平台" autocomplete="off">
+          <button type="submit" id="searchBtn">查找</button>
+          <p class="search-tip" id="searchTip" role="status" aria-live="polite"></p>
+        </form>
+        <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="mainNav" aria-label="展开导航菜单">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+</div>
+
+<section class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <span class="hero-tag">争议档案 · 时间线 · 原始说法</span>
+      <h1>每日必看<span>黑料</span></h1>
+      <p class="hero-lead">把直播间事故、代言翻车、平台处罚、当事人回应按时间排成可核对的档案。每条记录标明出处、时间戳与措辞差异，事实、回应、转述、推测分开摆放，看清一段瓜是从哪一秒开始变形的。</p>
+      <div class="hero-actions">
+        <a class="btn btn-gold" href="/#picks">进入精选档案</a>
+        <a class="btn btn-ghost" href="/#deep">读今日深度解析</a>
+      </div>
+      <div class="hero-stats">
+        <div><b>1,286</b><span>已归档事件条</span></div>
+        <div><b>347</b><span>带时间戳原始记录</span></div>
+        <div><b>11-08</b><span>档案更新日</span></div>
+      </div>
+    </div>
+    <div class="hero-visual" aria-hidden="true">
+      <svg viewBox="0 0 420 340" role="img" aria-label="档案卡片与时间线构成的装饰图形">
+        <defs>
+          <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#e8b84b" stop-opacity=".95"/>
+            <stop offset="1" stop-color="#b8862a" stop-opacity=".35"/>
+          </linearGradient>
+        </defs>
+        <rect x="30" y="26" width="270" height="180" rx="12" fill="#241c29" stroke="#e8b84b" stroke-opacity=".45"/>
+        <rect x="48" y="48" width="130" height="10" rx="5" fill="#e8b84b"/>
+        <rect x="48" y="70" width="220" height="7" rx="3.5" fill="#8c7f74"/>
+        <rect x="48" y="86" width="190" height="7" rx="3.5" fill="#6f6459"/>
+        <rect x="48" y="102" width="205" height="7" rx="3.5" fill="#6f6459"/>
+        <rect x="48" y="128" width="72" height="20" rx="10" fill="#20615c"/>
+        <rect x="130" y="128" width="72" height="20" rx="10" fill="#9c3f2c" opacity=".9"/>
+        <rect x="212" y="128" width="56" height="20" rx="10" fill="#5b3f74" opacity=".9"/>
+        <rect x="48" y="164" width="160" height="7" rx="3.5" fill="#6f6459"/>
+        <rect x="48" y="180" width="120" height="7" rx="3.5" fill="#6f6459"/>
+        <path d="M330 40 V280" stroke="#e8b84b" stroke-opacity=".5" stroke-width="2" stroke-dasharray="4 6"/>
+        <circle cx="330" cy="60" r="8" fill="url(#g1)"/>
+        <circle cx="330" cy="130" r="8" fill="#20615c"/>
+        <circle cx="330" cy="200" r="8" fill="#9c3f2c"/>
+        <circle cx="330" cy="270" r="8" fill="url(#g1)"/>
+        <rect x="200" y="212" width="190" height="104" rx="12" fill="#2f2536" stroke="#efe6d8" stroke-opacity=".18"/>
+        <rect x="218" y="234" width="96" height="9" rx="4.5" fill="#efe6d8" opacity=".8"/>
+        <rect x="218" y="254" width="150" height="6" rx="3" fill="#8c7f74"/>
+        <rect x="218" y="268" width="132" height="6" rx="3" fill="#8c7f74"/>
+        <rect x="218" y="288" width="64" height="16" rx="8" fill="#e8b84b" opacity=".85"/>
+      </svg>
+      <span class="hero-note">档案编号 · 措辞差异 · 时间戳</span>
+    </div>
+  </div>
+</section>
+
+<div class="wrap layout">
+<main>
+
+  <section id="overview">
+    <div class="sec-head"><h2>事件概览：本周被翻出来的三类争议</h2><span class="kicker">更新至 11-08</span></div>
+    <p class="sec-sub">争议按性质拆成三类：口播失准、商业合作翻车、平台规则处置。分类决定核对路径，也决定该看谁的原话。</p>
+    <div class="overview-grid">
+      <div class="ov-card">
+        <span class="num">01</span>
+        <h3>口播失准与剪辑差</h3>
+        <p>同一场直播，切片版与完整版相差 47 秒。10 月 28 日「星潮Live」那场，切片删掉了主播承认口误的前半句。</p>
+      </div>
+      <div class="ov-card">
+        <span class="num">02</span>
+        <h3>品牌方与主播的合同解释</h3>
+        <p>11 月 3 日「白鹿集」口服液终止合作，品牌声明只写“价值观不符”，合同里的品控条款并未公开。</p>
+      </div>
+      <div class="ov-card">
+        <span class="num">03</span>
+        <h3>平台处罚与申诉结果</h3>
+        <p>11 月 5 日「潮见短视频」对账号「老陈拆机」作出 7 天限流，申诉状态显示“待复核”，不算终局。</p>
+      </div>
+      <div class="ov-card">
+        <span class="num">04</span>
+        <h3>旧帖被重新引用</h3>
+        <p>2024 年 6 月一条微博被截图转发 2.1 万次，原帖已删，现存版本只能算“转述”，没有原始页面。</p>
+      </div>
+      <div class="ov-card">
+        <span class="num">05</span>
+        <h3>粉丝整理的“证据包”</h3>
+        <p>11 月 1 日一份 23 页 PDF 流传，含 6 张聊天截图与 4 段录屏，文件名标注来源，两处时间对不上。</p>
+      </div>
+      <div class="ov-card">
+        <span class="num">06</span>
+        <h3>媒体跟进后的措辞变化</h3>
+        <p>「新序财经」从“涉嫌虚假宣传”改成“宣传用语存在争议”，标题改过两次，正文加了更正说明。</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="picks">
+    <div class="sec-head"><h2>精选档案：值得逐条核对的四条</h2><span class="kicker">编辑挑拣</span></div>
+    <div class="pick">
+      <article class="pick-main">
+        <span class="tag tag-hot">重点档案</span>
+        <h3>星潮Live 10·28 直播口误全时间线</h3>
+        <p>19:42 上链接，19:47 主播说出“全网最低”，19:49 助播补充“指本场”。切片版从 19:48 起播，把补充句剪掉。完整回放存在直播平台，时长 2 小时 51 分，切片版 1 分 12 秒。</p>
+        <p class="meta"><span>2026-10-28</span><span>来源：平台回放、切片账号「速食剪辑」</span></p>
+        <img src="https://picsum.photos/seed/heiliao-live1028/720/360" width="720" height="360" loading="lazy" alt="直播回放时间轴示意图，标出19:47与19:49两个关键时间点">
+        <p class="meta" style="margin-top:10px"><a class="link" href="/#deep">看深度解析里的三处措辞差异</a></p>
+      </article>
+      <div class="pick-side">
+        <article class="pick-item">
+          <img src="https://picsum.photos/seed/heiliao-brand/128/128" width="128" height="128" loading="lazy" alt="白鹿集口服液合作终止声明页截图">
+          <div>
+            <h4>白鹿集终止合作：声明里没写的条款</h4>
+            <p class="meta"><span>11-03</span><span class="tag tag-fact">事实</span></p>
+          </div>
+        </article>
+        <article class="pick-item">
+          <img src="https://picsum.photos/seed/heiliao-limit/128/128" width="128" height="128" loading="lazy" alt="潮见短视频账号管理后台的限流通知页面">
+          <div>
+            <h4>老陈拆机被限流 7 天，申诉仍在复核</h4>
+            <p class="meta"><span>11-05</span><span class="tag tag-fact">事实</span></p>
+          </div>
+        </article>
+        <article class="pick-item">
+          <img src="https://picsum.photos/seed/heiliao-pdf/128/128" width="128" height="128" loading="lazy" alt="23页证据包PDF首页，含编号与来源标注">
+          <div>
+            <h4>23 页证据包里的两处时间矛盾</h4>
+            <p class="meta"><span>11-01</span><span class="tag tag-hear">转述</span></p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="updates">
+    <div class="sec-head"><h2>最新更新：近七日档案变动</h2><span class="kicker">含更正记录</span></div>
+    <ul class="updates">
+      <li><time datetime="2026-11-08">11-08</time><div class="t"><b>「星潮Live」档案补入品牌方内部邮件转述</b><span>邮件由三方转手，未拿到原件，标记为转述</span></div><span class="tag tag-hear">转述</span></li>
+      <li><time datetime="2026-11-07">11-07</time><div class="t"><b>「老陈拆机」限流通知截图核对完成</b><span>后台页面时间 11-05 14:22，与账号自述一致</span></div><span class="tag tag-fact">已核</span></li>
+      <li><time datetime="2026-11-07">11-07</time><div class="t"><b>更正：10-28 口误时间由 19:48 改为 19:47</b><span>依完整回放第 2 小时 12 分处校正</span></div><span class="tag tag-fact">更正</span></li>
+      <li><time datetime="2026-11-06">11-06</time><div class="t"><b>「白鹿集」声明原文全文录入</b><span>共 214 字，未提赔偿，只写终止合作</span></div><span class="tag tag-fact">原文</span></li>
+      <li><time datetime="2026-11-05">11-05</time><div class="t"><b>旧帖截图新增来源标注</b><span>原帖已删，现存 3 个转发版本互有出入</span></div><span class="tag tag-guess">待定</span></li>
+      <li><time datetime="2026-11-04">11-04</time><div class="t"><b>「新序财经」两版标题对照上线</b><span>标题改动 2 次，正文补更正说明 1 段</span></div><span class="tag tag-fact">已核</span></li>
+      <li><time datetime="2026-11-03">11-03</time><div class="t"><b>新增栏目：平台处罚与申诉状态追踪</b><span>首批录入 9 条，5 条仍处待复核</span></div><span class="tag tag-fact">栏目</span></li>
+    </ul>
+  </section>
+
+  <section id="cats">
+    <div class="sec-head"><h2>分类入口：按争议类型找档案</h2><span class="kicker">11 个频道</span></div>
+    <div class="cat-index">
+      <a href="/#picks">直播口误切片 <b>212</b></a>
+      <a href="/#picks">带货翻车记录 <b>168</b></a>
+      <a href="/#news">品牌解约声明 <b>94</b></a>
+      <a href="/#rank">平台限流处罚 <b>137</b></a>
+      <a href="/#updates">账号注销与改名 <b>76</b></a>
+      <a href="/#deep">措辞差异比对 <b>245</b></a>
+      <a href="/#comments">粉丝证据包 <b>63</b></a>
+      <a href="/#news">媒体更正说明 <b>51</b></a>
+      <a href="/#guide">时间戳校正 <b>119</b></a>
+      <a href="/#deep">旧帖重引争议 <b>88</b></a>
+      <a href="/#faq">代言合同解释 <b>72</b></a>
+    </div>
+  </section>
+
+  <section id="layers">
+    <div class="sec-head"><h2>信息分层：同一件事的四种说法</h2><span class="kicker">事实 / 回应 / 转述 / 推测</span></div>
+    <p class="sec-sub">以 10 月 28 日「星潮Live」最低价口播为例，四层信息分开摆放，读者可自行判断哪层还缺原件。</p>
+    <div class="layer-panel">
+      <div class="layer">
+        <h4><span class="tag tag-fact">事实</span></h4>
+        <ul>
+          <li>19:47 主播说出“全网最低”<span class="who">完整回放可查</span></li>
+          <li>19:49 助播补充“指本场”<span class="who">同一回放</span></li>
+          <li>切片版时长 1 分 12 秒<span class="who">账号「速食剪辑」</span></li>
+        </ul>
+      </div>
+      <div class="layer">
+        <h4><span class="tag tag-claim">回应</span></h4>
+        <ul>
+          <li>主播 11-02 直播称“口误，愿补差价”<span class="who">当晚直播原话</span></li>
+          <li>品牌方 11-03 声明终止合作<span class="who">214 字全文</span></li>
+        </ul>
+      </div>
+      <div class="layer">
+        <h4><span class="tag tag-hear">转述</span></h4>
+        <ul>
+          <li>“品牌方内部邮件已定性虚假宣传”<span class="who">三方转手，无原件</span></li>
+          <li>“切片账号被官方约谈”<span class="who">仅群聊截图</span></li>
+        </ul>
+      </div>
+      <div class="layer">
+        <h4><span class="tag tag-guess">推测</span></h4>
+        <ul>
+          <li>剪掉补充句是有意为之<span class="who">无后台数据支持</span></li>
+          <li>解约与口播直接相关<span class="who">声明未写原因</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="deep">
+    <article class="deep">
+      <div class="sec-head" style="border-color:var(--gold)"><h2>深度解析：切片不是证据，完整回放才是</h2><span class="kicker">今日主体阅读</span></div>
+      <p class="lead">判断：在直播类争议里，把 1 分钟切片当作事实来源，是当前传播链上最大的误差来源。理由是切片平均删掉 40% 的上下文，而关键限定语往往就在被删的那部分。</p>
+
+      <h3>一、三处措辞差异，差在限定语</h3>
+      <p>把完整回放与切片逐句对照，能列出三处差异。第一处：19:47 主播原话是“这场我谈到的价格，全网最低”，切片保留“全网最低”，删掉“这场我谈到的”。第二处：19:49 助播说“最低指本场三个链接”，切片整句删除。第三处：20:14 主播主动提及“如果别家更低，我补差价”，切片未收。</p>
+      <p>三处差异都指向同一个方向：完整版里有自我限制，切片版没有。这不是措辞偏好问题，删掉限定语之后，句子从“本场三个链接最低”变成“全网最低”，法律含义完全不同。</p>
+
+      <table class="check-table">
+        <caption class="sr-only">完整回放与切片版措辞对照</caption>
+        <thead><tr><th>时间点</th><th>完整回放原话</th><th>切片版处理</th></tr></thead>
+        <tbody>
+          <tr><td>19:47</td><td>这场我谈到的价格，全网最低</td><td>保留后半句</td></tr>
+          <tr><td>19:49</td><td>最低指本场三个链接</td><td>整句删除</td></tr>
+          <tr><td>20:14</td><td>别家更低我补差价</td><td>未收录</td></tr>
+          <tr><td>21:03</td><td>口播稿由选品组提供</td><td>未收录</td></tr>
+        </tbody>
+      </table>
+
+      <div class="quote-card">
+        “如果别家更低，我这边补差价，这话我敢说。”
+        <cite>—— 主播 10-28 20:14 直播原话，完整回放第 2 小时 32 分</cite>
+      </div>
+
+      <h3>二、平台规则变化：限流门槛从 3 次降到 1 次</h3>
+      <p>11 月 5 日「潮见短视频」更新《直播营销行为管理细则》第 4.2 条，把“绝对化用语”的限流触发次数由 3 次降为 1 次，生效日 11 月 10 日。这条变化直接影响「老陈拆机」案：账号 11-05 收到 7 天限流通知，通知里引用的是旧版第 4.1 条。</p>
+      <p>也就是说，处罚依据是旧规则，而新规则更严。若按新版，同类口播一次即可触发限流。规则前后差异在这里不是背景知识，而是判断“处罚是否偏重”的必要前提。</p>
+
+      <div class="verdict">
+        <strong>可反驳的判断：</strong>「老陈拆机」的 7 天限流在旧规则下属中档处置，不构成过重；但若同样内容放到 11 月 10 日之后发布，处置标准会立刻变严。争议焦点应从“是否处罚”转向“新规是否溯及既往”，细则第 6 条写的是“不溯及”，这一条比处罚本身更值得盯。
+      </div>
+
+      <h3>三、说法差异：媒体两版标题之间的 6 小时</h3>
+      <p>「新序财经」10-29 09:12 首发标题为《星潮Live 涉嫌虚假宣传》，10-29 15:40 改为《星潮Live 宣传用语存在争议》，正文末尾加了一段 118 字的更正说明，称“涉嫌”一词缺乏监管认定支撑。6 小时里，首发标题被转载 37 次，改后标题被转载 9 次。</p>
+      <p>转载量差 4 倍，说明更正的传播力远低于首发。做核对时，看转载时间比看转载内容更有用：10-29 15:40 之前转的，基本都带着“涉嫌”二字。</p>
+
+      <h3>四、把判断拆成可核对的三步</h3>
+      <table class="check-table">
+        <thead><tr><th>步骤</th><th>要查什么</th><th>本案例结论</th></tr></thead>
+        <tbody>
+          <tr><td>第一步</td><td>有没有完整原片</td><td>有，平台回放 2 小时 51 分</td></tr>
+          <tr><td>第二步</td><td>切片与原片差在哪</td><td>3 处，均在限定语</td></tr>
+          <tr><td>第三步</td><td>处罚依据哪版规则</td><td>旧版 4.1 条，新规 11-10 生效</td></tr>
+        </tbody>
+      </table>
+      <p>三步走完，能确定的只有：切片删了限定语，处罚用了旧规。至于删除动机、解约与口播的因果，目前没有原件支撑，只能停在推测层。这三步换个案例同样适用，区别只在原片是否存在。</p>
+    </article>
+  </section>
+
+  <section id="guide">
+    <div class="sec-head"><h2>体验指南：五步核对一段“黑料”</h2><span class="kicker">可照做</span></div>
+    <ol class="steps">
+      <li><b>先找原片，不找截图</b><span>直播类看平台回放，帖子类看账号主页。原帖已删的，只能标转述，不进入事实层。</span></li>
+      <li><b>把时间戳抄下来</b><span>完整回放第几小时第几分，比“大概晚上”有用。本档 10-28 那场，19:47 与 19:49 相差 2 分钟，结论就翻了。</span></li>
+      <li><b>比对限定语有没有被删</b><span>“本场”“这三个链接”“我谈到的”都是限定语，删掉后句子的法律含义会变。</span></li>
+      <li><b>查规则版本与生效日</b><span>平台细则常改。11-05 更新的 4.2 条 11-10 生效，11-05 的处罚仍按旧条。</span></li>
+      <li><b>看更正说明有没有跟上</b><span>「新序财经」改了标题也加了更正，但转载量差 4 倍。更正不看有没有，看传没传到。</span></li>
+    </ol>
+  </section>
+
+  <section id="faq">
+    <div class="sec-head"><h2>常见疑问</h2><span class="kicker">FAQ</span></div>
+    <div class="faq">
+      <details>
+        <summary>直播切片和完整回放，哪个能当证据用？</summary>
+        <div class="ans"><p>完整回放能当证据，切片只能当线索。区别在于切片经过二次剪辑，删掉的部分无法从切片本身还原。10-28 那场，切片 1 分 12 秒，完整回放 2 小时 51 分，删掉的内容里包含“最低指本场三个链接”这句限定。</p></div>
+      </details>
+      <details>
+        <summary>平台限流通知里的条款编号怎么核对？</summary>
+        <div class="ans"><p>看通知引用的是哪一版细则、哪一条。老陈拆机 11-05 收到的通知引用第 4.1 条，而 11-05 当天平台刚发布新版第 4.2 条，生效日 11-10。条款编号对不上生效日，说明处罚依据是旧规，这时讨论“是否偏重”才有基准。</p></div>
+      </details>
+      <details>
+        <summary>品牌解约声明只有 214 字，能读出什么？</summary>
+        <div class="ans"><p>能读出的只有终止合作这个动作，以及声明未提赔偿、未写具体原因。白鹿集 11-03 声明的措辞是“价值观不符”，这五个字既不是违约认定，也不是质量结论。把解约直接等同于“坐实虚假宣传”，属于推测层。</p></div>
+      </details>
+      <details>
+        <summary>粉丝整理的证据包可信度怎么分层？</summary>
+        <div class="ans"><p>先看每张截图有没有来源标注，再看时间是否自洽。11-01 那份 23 页 PDF 有 6 张聊天截图、4 段录屏，其中 2 处时间对不上：截图显示 22:10，录屏进度条对应 21:48。对不上的部分只能标待定。</p></div>
+      </details>
+      <details>
+        <summary>媒体改了标题，之前转发的算不算错？</summary>
+        <div class="ans"><p>按转发时间算。新序财经 10-29 15:40 改标题，在此之前转发的 37 次都带“涉嫌”二字，之后 9 次不带。判断一条转载信息是否过时，看时间戳比看措辞更准。</p></div>
+      </details>
+      <details>
+        <summary>“全网最低”这类绝对化用语，处罚标准是什么？</summary>
+        <div class="ans"><p>平台侧看细则版本，监管侧看是否构成虚假宣传。潮见短视频旧版第 4.1 条要求 3 次触发，新版 4.2 条 1 次即触发，生效日 11-10。同一条口播，在 11 月 10 日前后发布，处置结果会不同。</p></div>
+      </details>
+    </div>
+  </section>
+
+  <section id="comments">
+    <div class="sec-head"><h2>用户评论：三种语气，都指向具体条目</h2><span class="kicker">含吐槽</span></div>
+    <div class="comments">
+      <div class="cm">
+        <header><b>@编号零七</b><time datetime="2026-11-07">11-07 21:36</time></header>
+        <p><span class="ref">星潮Live 10·28</span>把 19:49 那句删掉，整段意思就反了。切片账号「速食剪辑」这条播放 218 万，完整回放才 4.7 万，比例太悬殊。</p>
+      </div>
+      <div class="cm">
+        <header><b>@看客不站队</b><time datetime="2026-11-07">11-07 19:02</time></header>
+        <p><span class="ref">老陈拆机限流</span>旧规 3 次、新规 1 次，7 天限流在旧规里真不算重。但通知引用 4.1 条、生效日却写 11-10，这个时间差才是问题。</p>
+      </div>
+      <div class="cm">
+        <header><b>@芥末咖啡</b><time datetime="2026-11-06">11-06 23:11</time></header>
+        <p><span class="ref">白鹿集声明</span>214 字，一个字没提赔偿，也没说哪条合作条款被违反。这种声明读三遍还是五个字：价值观不符。</p>
+      </div>
+      <div class="cm">
+        <header><b>@阿枢</b><time datetime="2026-11-06">11-06 15:48</time></header>
+        <p><span class="ref">23 页证据包</span>时间对不上那两处我核过，截图水印 22:10，录屏里主播报时 21:48。差 22 分钟，要么截图是后来的，要么录屏是另一场。</p>
+      </div>
+      <div class="cm">
+        <header><b>@南岸旧书</b><time datetime="2026-11-05">11-05 10:26</time></header>
+        <p><span class="ref">新序财经改标题</span>15:40 改的，我 15:02 转的那条还挂着“涉嫌”。不是怪媒体，是转载量 37 比 9，更正基本没传开。</p>
+      </div>
+      <div class="cm">
+        <header><b>@槐序</b><time datetime="2026-11-04">11-04 22:57</time></header>
+        <p><span class="ref">档案整体</span>分层标签挺好用，但 10-31 那条旧帖重引我点进去，三个转发版本措辞都不一样，到现在也没定论，有点悬着。</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="news">
+    <div class="sec-head"><h2>相关资讯：平台与媒体的公开动作</h2><span class="kicker">附日期</span></div>
+    <div class="news-grid">
+      <article class="news">
+        <div>
+          <span class="tag tag-fact">平台规则</span>
+          <h3>潮见短视频更新直播营销细则第 4.2 条</h3>
+          <p>11-05 发布，绝对化用语限流触发次数由 3 次降为 1 次，11-10 生效。</p>
+        </div>
+        <img src="https://picsum.photos/seed/heiliao-rule/192/144" width="192" height="144" loading="lazy" alt="潮见短视频细则更新公告页，标注4.2条与生效日期">
+      </article>
+      <article class="news">
+        <div>
+          <span class="tag tag-fact">品牌动作</span>
+          <h3>白鹿集发布终止合作声明</h3>
+          <p>11-03 全文 214 字，未提赔偿与具体条款，仅称价值观不符。</p>
+        </div>
+        <img src="https://picsum.photos/seed/heiliao-declare/192/144" width="192" height="144" loading="lazy" alt="白鹿集终止合作声明全文页面">
+      </article>
+      <article class="news">
+        <div>
+          <span class="tag tag-fact">媒体更正</span>
+          <h3>新序财经修改标题并补更正说明</h3>
+          <p>10-29 15:40 将“涉嫌虚假宣传”改为“宣传用语存在争议”，加 118 字更正。</p>
+        </div>
+        <img src="https://picsum.photos/seed/heiliao-fix/192/144" width="192" height="144" loading="lazy" alt="新序财经两版标题对照截图">
+      </article>
+      <article class="news">
+        <div>
+          <span class="tag tag-hear">转述</span>
+          <h3>切片账号「速食剪辑」被指收到约谈通知</h3>
+          <p>11-04 群聊截图流出，无平台公告或账号回应，标记转述。</p>
+        </div>
+        <img src="https://picsum.photos/seed/heiliao-clip/192/144" width="192" height="144" loading="lazy" alt="群聊截图转述页面，内容为约谈说法">
+      </article>
+    </div>
+  </section>
+
+  <section id="rank">
+    <div class="sec-head"><h2>本周热度榜：按核对素材完整度排</h2><span class="kicker">非传播量排名</span></div>
+    <p class="sec-sub">评分取三项之和：原片可得性 40 分、时间戳完整度 30 分、规则依据清晰度 30 分。分数越低，越依赖转述。</p>
+    <ol class="rank">
+      <li><span>星潮Live 10·28 直播口误</span><span class="score">92 分</span></li>
+      <li><span>老陈拆机限流与申诉</span><span class="score">84 分</span></li>
+      <li><span>白鹿集终止合作声明</span><span class="score">71 分</span></li>
+      <li><span>新序财经标题更正</span><span class="score">68 分</span></li>
+      <li><span>23 页证据包时间矛盾</span><span class="score">49 分</span></li>
+      <li><span>2024-06 旧帖重引</span><span class="score">33 分</span></li>
+    </ol>
+  </section>
+
+  <section id="rec">
+    <div class="sec-head"><h2>相关推荐</h2><span class="kicker">顺着看</span></div>
+    <div class="rec">
+      <a href="/#deep">全网最低口播的限定语拆解</a>
+      <a href="/#layers">事实回应转述推测四层标签怎么用</a>
+      <a href="/#guide">时间戳校正五步法</a>
+      <a href="/#news">潮见短视频细则 4.2 条前后对照</a>
+      <a href="/#faq">品牌解约声明能读出什么</a>
+      <a href="/#comments">切片账号播放量与回放播放量比</a>
+      <a href="/#updates">老陈拆机申诉状态追踪</a>
+      <a href="/#picks">23 页证据包来源标注清单</a>
+    </div>
+  </section>
+
+</main>
+
+<aside aria-label="侧栏">
+  <div class="side-card">
+    <h3>栏目导航</h3>
+    <ul class="side-nav" id="sideNav">
+      <li><a href="/#overview">事件概览</a></li>
+      <li><a href="/#picks">精选档案</a></li>
+      <li><a href="/#updates">最新更新</a></li>
+      <li><a href="/#cats">分类入口</a></li>
+      <li><a href="/#layers">信息分层</a></li>
+      <li><a href="/#deep">深度解析</a></li>
+      <li><a href="/#guide">体验指南</a></li>
+      <li><a href="/#faq">常见疑问</a></li>
+      <li><a href="/#comments">用户评论</a></li>
+      <li><a href="/#news">相关资讯</a></li>
+      <li><a href="/#rank">本周热度榜</a></li>
+    </ul>
+  </div>
+  <div class="side-card">
+    <h3>档案时间线（近 10 天）</h3>
+    <ul class="timeline">
+      <li><time>10-28 19:47</time>星潮Live 口播“全网最低”</li>
+      <li><time>10-29 15:40</time>新序财经改标题并加更正</li>
+      <li><time>11-01</time>23 页证据包开始流传</li>
+      <li><time>11-03</time>白鹿集声明终止合作</li>
+      <li><time>11-05</time>潮见短视频处罚老陈拆机</li>
+      <li><time>11-07</time>口误时间点由 19:48 更正为 19:47</li>
+    </ul>
+  </div>
+  <div class="side-card">
+    <h3>本周被搜最多的条目</h3>
+    <ul class="side-hot">
+      <li><span class="k">1</span><a href="/#picks">星潮Live 切片完整版</a></li>
+      <li><span class="k">2</span><a href="/#news">白鹿集 214 字声明原文</a></li>
+      <li><span class="k">3</span><a href="/#faq">潮见短视频 4.2 条生效日</a></li>
+      <li><span class="k">4</span><a href="/#comments">23 页证据包 22 分钟差</a></li>
+      <li><span class="k">5</span><a href="/#guide">补差价承诺原话时间</a></li>
+    </ul>
+  </div>
+</aside>
+</div>
+
+<footer class="site-footer" id="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="foot-brand">
+          <svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#241c29"/><path d="M14 44 L26 20 L34 34 L42 16 L52 44" stroke="#e8b84b" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <b>每日必看黑料</b>
+        </div>
+        <p class="foot-desc">把争议事件拆成可对照的时间戳、原文与规则版本，让每一条“听说”都能落回它的出处。</p>
+      </div>
+      <div class="foot-cols">
+        <div>
+          <h4>档案入口</h4>
+          <ul>
+            <li><a href="/#picks">直播口误切片</a></li>
+            <li><a href="/#picks">带货翻车记录</a></li>
+            <li><a href="/#cats">品牌解约声明</a></li>
+            <li><a href="/#rank">平台限流处罚</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>核对工具</h4>
+          <ul>
+            <li><a href="/#guide">时间戳校正步骤</a></li>
+            <li><a href="/#layers">四层信息标签</a></li>
+            <li><a href="/#deep">措辞差异对照</a></li>
+            <li><a href="/#faq">规则版本查询</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>参与</h4>
+          <ul>
+            <li><a href="/#comments">提交条目核对</a></li>
+            <li><a href="/#updates">查看更正记录</a></li>
+            <li><a href="/#news">公开动作追踪</a></li>
+            <li><a href="/#top">回到顶部</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <p class="foot-note">示例数据说明：站内事件条目、评分、播放量与评论均为演示用示例内容，人物名、账号名与品牌名按垂类特征虚构；引用的时间戳与条款编号用于说明核对方法，不对应真实主体。</p>
+    <div class="foot-bottom">
+      <span>档案更新时间：2026-11-08，对应正文更正项：口误时间点 19:48→19:47、“老陈拆机”限流通知截图核对。</span>
+      <span>© 2026 每日必看黑料 示例站点</span>
+    </div>
+  </div>
+</footer>
+
+<button id="toTop" type="button" aria-label="返回页面顶部">↑ 顶部</button>
+
+<script>
+(function(){
+  "use strict";
+  var menuBtn = document.getElementById('menuBtn');
+  var mainNav = document.getElementById('mainNav');
+  var sideNav = document.getElementById('sideNav');
+  var toTop = document.getElementById('toTop');
+  var searchForm = document.getElementById('searchForm');
+  var q = document.getElementById('q');
+  var tip = document.getElementById('searchTip');
+
+  /* 移动端菜单 */
+  if (menuBtn && mainNav) {
+    menuBtn.addEventListener('click', function(){
+      var open = mainNav.classList.toggle('open');
+      menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      menuBtn.setAttribute('aria-label', open ? '收起导航菜单' : '展开导航菜单');
+    });
+    mainNav.addEventListener('click', function(e){
+      if (e.target.tagName === 'A' && window.innerWidth <= 640) {
+        mainNav.classList.remove('open');
+        menuBtn.setAttribute('aria-expanded','false');
+        menuBtn.setAttribute('aria-label','展开导航菜单');
+      }
+    });
+    document.addEventListener('keydown', function(e){
+      if (e.key === 'Escape' && mainNav.classList.contains('open')) {
+        mainNav.classList.remove('open');
+        menuBtn.setAttribute('aria-expanded','false');
+        menuBtn.focus();
+      }
+    });
+  }
+
+  /* 平滑滚动（为吸顶预留偏移，滚动定位由 CSS scroll-margin-top 处理） */
+  document.addEventListener('click', function(e){
+    var a = e.target.closest('a[href^="/#"]');
+    if (!a) return;
+    var id = a.getAttribute('href').slice(2);
+    var target = document.getElementById(id);
+    if (!target) return;
+    e.preventDefault();
+    target.scrollIntoView({behavior:'smooth', block:'start'});
+    if (history.replaceState) history.replaceState(null, '', '/#' + id);
+  });
+
+  /* 侧栏滚动高亮 */
+  var sideLinks = sideNav ? Array.prototype.slice.call(sideNav.querySelectorAll('a')) : [];
+  var sections = sideLinks.map(function(a){
+    return document.getElementById(a.getAttribute('href').slice(2));
+  });
+  function highlight(){
+    var pos = window.scrollY + 140;
+    var active = -1;
+    sections.forEach(function(sec, i){
+      if (sec && sec.offsetTop <= pos) active = i;
+    });
+    sideLinks.forEach(function(a, i){
+      a.classList.toggle('active', i === active);
+    });
+  }
+  window.addEventListener('scroll', highlight, {passive:true});
+  highlight();
+
+  /* 回到顶部 */
+  function toggleTop(){
+    if (!toTop) return;
+    toTop.classList.toggle('on', window.scrollY > 520);
+  }
+  window.addEventListener('scroll', toggleTop, {passive:true});
+  toggleTop();
+  if (toTop) {
+    toTop.addEventListener('click', function(){
+      window.scrollTo({top:0, behavior:'smooth'});
+    });
+  }
+
+  /* 本地查找 */
+  if (searchForm) {
+    var index = [];
+    document.querySelectorAll('main h2, main h3, main h4, main .updates .t, main .rec a, main .cat-index a, main .rank li span:first-child, main summary').forEach(function(el){
+      var text = (el.textContent || '').trim();
+      if (text.length > 1) index.push({text: text, el: el});
+    });
+    function doSearch(){
+      var kw = (q.value || '').trim().toLowerCase();
+      if (!kw) {
+        tip.textContent = '输入事件名、人名或平台名，例如“星潮Live”。';
+        tip.classList.add('on');
+        return;
+      }
+      var hit = null;
+      for (var i = 0; i < index.length; i++) {
+        if (index[i].text.toLowerCase().indexOf(kw) > -1) { hit = index[i]; break; }
+      }
+      if (hit) {
+        tip.textContent = '已定位到：' + hit.text;
+        tip.classList.add('on');
+        var sec = hit.el.closest('section') || hit.el;
+        if (sec && sec.scrollIntoView) sec.scrollIntoView({behavior:'smooth', block:'start'});
+        if (hit.el.tagName === 'DETAILS') hit.el.setAttribute('open','');
+      } else {
+        tip.textContent = '没有找到“' + q.value.trim() + '”相关条目，换个关键词或查看分类入口。';
+        tip.classList.add('on');
+      }
+    }
+    searchForm.addEventListener('submit', function(e){ e.preventDefault(); doSearch(); });
+    document.getElementById('searchBtn').addEventListener('click', function(e){ e.preventDefault(); doSearch(); });
+    q.addEventListener('keydown', function(e){
+      if (e.key === 'Enter') { e.preventDefault(); doSearch(); }
+    });
+  }
+})();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "每日必看黑料",
+  "description": "把直播口误、品牌解约、平台处罚等争议事件按时间线与原文措辞整理的档案式站点，事实、回应、转述、推测分开陈列。",
+  "inLanguage": "zh-CN"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "直播切片和完整回放，哪个能当证据用？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "完整回放能当证据，切片只能当线索。区别在于切片经过二次剪辑，删掉的部分无法从切片本身还原。10-28 那场，切片 1 分 12 秒，完整回放 2 小时 51 分，删掉的内容里包含“最低指本场三个链接”这句限定。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "平台限流通知里的条款编号怎么核对？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "看通知引用的是哪一版细则、哪一条。老陈拆机 11-05 收到的通知引用第 4.1 条，而 11-05 当天平台刚发布新版第 4.2 条，生效日 11-10。条款编号对不上生效日，说明处罚依据是旧规，这时讨论是否偏重才有基准。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "品牌解约声明只有 214 字，能读出什么？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "能读出的只有终止合作这个动作，以及声明未提赔偿、未写具体原因。白鹿集 11-03 声明的措辞是“价值观不符”，这五个字既不是违约认定，也不是质量结论。把解约直接等同于坐实虚假宣传，属于推测层。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "粉丝整理的证据包可信度怎么分层？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "先看每张截图有没有来源标注，再看时间是否自洽。11-01 那份 23 页 PDF 有 6 张聊天截图、4 段录屏，其中 2 处时间对不上：截图显示 22:10，录屏进度条对应 21:48。对不上的部分只能标待定。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "媒体改了标题，之前转发的算不算错？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "按转发时间算。新序财经 10-29 15:40 改标题，在此之前转发的 37 次都带“涉嫌”二字，之后 9 次不带。判断一条转载信息是否过时，看时间戳比看措辞更准。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "“全网最低”这类绝对化用语，处罚标准是什么？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "平台侧看细则版本，监管侧看是否构成虚假宣传。潮见短视频旧版第 4.1 条要求 3 次触发，新版 4.2 条 1 次即触发，生效日 11-10。同一条口播，在 11 月 10 日前后发布，处置结果会不同。"
+      }
+    }
+  ]
+}
+</script>
+</body>
+      </html>
